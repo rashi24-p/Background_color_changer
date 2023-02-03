@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  type="text/css" href="style.css">
+  <title>Change_background-color_in_single_click</title>
+</head>
+<body>
+  <select name="" id="select" onClick="hello();">
+    <option>Tap here in order to change color</option>
+    <option style="background-color: #CD5C5C;">#CD5C5C</option>
+    <option style="background-color: #888f6c;">#888f6c</option>
+    <option style="background-color: #b289b0;">#b289b0</option>
+    <option style="background-color: #61ecce;">#61ecce</option>
+    <option style="background-color: #b4d16a;">#b4d16a</option>
+</select>
+<script>
+function hello(){
+let d = document.getElementById("select");
+let text = document.options[document.selectedIndex].value;
+document.body.style.backgroundColor=text;
+}
+</script>
+</body>
+</html>
